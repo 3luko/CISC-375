@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Class Selector Exercise - Web Accessibility</title>
+    <style>
+        
+        /* Example */
+        .highlight {
+            background-color: yellow;
+            padding: 2px 4px;
+        }
+        
+        /* TODO: Create rules for these classes: */
+        /* .important { } */
+        /* .wcag-principle { } */
+        /* .example { } */
+        /* .definition { } */
+        /* .best-practice { } */
+        /* .callout { } */
+        /* .bordered { } */
+        /* .large-text { } */
+        
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        
+        h1 {
+            color: #333;
+            border-bottom: 3px solid #0066cc;
+        }
+        
+        h2 {
+            color: #0066cc;
+            margin-top: 30px;
+            background-color: lightblue;
+            border-radius: 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1 class="highlight large-text">Practicing CSS Class Selectors</h1>
+    
+    <h2>What is Web Accessibility?</h2>
+    <p>
+        Web accessibility means that <span class="highlight important">websites, tools, and technologies</span> 
+        are designed and developed so that people with disabilities can use them. More specifically, 
+        people can perceive, understand, navigate, and interact with the Web.
+    </p>
+    
+    <p class="important callout bordered">
+        Accessibility is <strong>essential</strong> for developers and organizations that want to 
+        create high-quality websites and web tools, and not exclude people from using their products 
+        and services.
+    </p>
+    
+    <h2>The Four WCAG Principles</h2>
+    <p>
+        The Web Content Accessibility Guidelines (WCAG) are built around four main principles, 
+        often remembered by the acronym <span class="wcag-principle highlight">POUR</span>:
+    </p>
+    
+    <ul>
+        <li class="wcag-principle bordered"><strong>Perceivable</strong> - Information and user interface components must be presentable to users in ways they can perceive.</li>
+        <li class="wcag-principle bordered"><strong>Operable</strong> - User interface components and navigation must be operable.</li>
+        <li class="wcag-principle bordered"><strong>Understandable</strong> - Information and the operation of user interface must be understandable.</li>
+        <li class="wcag-principle bordered"><strong>Robust</strong> - Content must be robust enough that it can be interpreted by a wide variety of user agents, including assistive technologies.</li>
+    </ul>
+    
+    <h2>Common Accessibility Features</h2>
+    
+    <p class="definition callout">
+        <strong>Alt Text:</strong> Alternative text descriptions for images allow screen readers 
+        to convey the content and function of images to users who cannot see them.
+    </p>
+    
+    <p class="example bordered">
+        Example: <code>&lt;img src="logo.png" alt="Company Logo - Accessible Web Design"&gt;</code>
+    </p>
+    
+    <p class="definition callout">
+        <strong>Semantic HTML:</strong> Using HTML elements according to their intended purpose 
+        helps assistive technologies understand the <span class="highlight important">structure and meaning</span> 
+        of web content.
+    </p>
+    
+    <p class="example bordered">
+        Example: Use <code>&lt;nav&gt;</code> for navigation, <code>&lt;main&gt;</code> for main content, 
+        and <code>&lt;button&gt;</code> for interactive buttons rather than styled divs.
+    </p>
+    
+    <h2>Best Practices for Accessible Design</h2>
+    
+    <p class="best-practice callout bordered">
+        <strong>Color Contrast:</strong> Ensure sufficient contrast between text and background colors. 
+        WCAG recommends a contrast ratio of at least <span class="important highlight">4.5:1</span> for normal text 
+        and 3:1 for large text.
+    </p>
+    
+    <p class="best-practice callout bordered">
+        <strong>Keyboard Navigation:</strong> All interactive elements should be accessible via keyboard. 
+        Users should be able to navigate through a website using only the Tab, Enter, and arrow keys.
+    </p>
+    
+    <p class="best-practice callout bordered">
+        <strong>Focus Indicators:</strong> Visible focus indicators help keyboard users know which element 
+        currently has focus. <span class="important">Never remove the default focus outline</span> without 
+        providing an alternative.
+    </p>
+    
+    <h2>Why Accessibility Matters</h2>
+    
+    <p>
+        Approximately <span class="highlight large-text important">15% of the world's population</span> experiences some 
+        form of disability. By creating accessible websites, developers ensure that everyone, regardless 
+        of their abilities, can access information and services online.
+    </p>
+    
+    <p class="important callout bordered large-text">
+        Remember: Accessibility benefits everyone, not just people with disabilities. Features like 
+        captions, clear navigation, and readable fonts improve the user experience for all users.
+    </p>
+    
+    <hr>
+    
+    <h2>Exercise Instructions</h2>
+    <p class="definition bordered">
+        <strong>Your Task:</strong> Create CSS rules in the <code>&lt;style&gt;</code> section above 
+        for the following classes used throughout this document:
+    </p>
+    <ul>
+        <li><code>.important</code> - Style this to stand out for critical information</li>
+        <li><code>.wcag-principle</code> - Make these visually distinct from regular text</li>
+        <li><code>.example</code> - Style code examples differently from definitions</li>
+        <li><code>.definition</code> - Create a style that clearly marks definitions</li>
+        <li><code>.best-practice</code> - Design a style that highlights best practices</li>
+        <li><code>.callout</code> - Create a box or container style for callout sections</li>
+        <li><code>.bordered</code> - Add a border style that works well with other classes</li>
+        <li><code>.large-text</code> - Increase font size for emphasis</li>
+    </ul>
+    
+    <p class="highlight important bordered">
+        <strong>Key Learning Goal:</strong> Notice how many elements in this document have 
+        <em>multiple classes</em> applied to them. When you style these classes, observe how 
+        the styles combine and interact with each other!
+    </p>
+    
+    <div class="example callout bordered">
+        <h3>Multiple Classes Example:</h3>
+        <p>This div has three classes: <code>example</code>, <code>callout</code>, and <code>bordered</code></p>
+        <p>Each class can contribute different styles:</p>
+        <ul>
+            <li><code>.example</code> might add a background color</li>
+            <li><code>.callout</code> might add padding and margin</li>
+            <li><code>.bordered</code> might add a border</li>
+        </ul>
+        <p>All three styles will be applied to this element!</p>
+    </div>
+    
+    <p class="best-practice important large-text">
+        <strong>Bonus Challenge:</strong> Ensure your CSS styling choices follow accessibility 
+        best practices, including proper color contrast and readable fonts!
+    </p>
+    
+    <h2>Questions to Consider:</h2>
+    <ol class="definition bordered">
+        <li>What happens when multiple classes apply the same CSS property to an element?</li>
+        <li>How does the order of classes in the HTML affect the styling?</li>
+        <li>How does the order of CSS rules in the stylesheet affect which styles are applied?</li>
+        <li>Can you identify all the elements in this document that have multiple classes?</li>
+    </ol>
+</body>
+</html>
