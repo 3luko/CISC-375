@@ -8,9 +8,9 @@
 
 .eating-pizza{
     float: left;
-    width: 200px;
+    width: 50%;
     margin-right: 15px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 
@@ -24,9 +24,9 @@ body {
 
 .card{
     position: relative; 
-    width: 300px;
+    width: 40%;
     margin: 40px auto;
-    padding: 20px;
+    padding: 3%;
     background: white;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
@@ -50,8 +50,30 @@ body {
     padding: 5px 10px;
     font-size: 12px;
     border-radius: 4px;
-    z-index: 2; 
+    z-index: 2;
 }
+
+.pizza-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px;
+    border-radius: 10px;
+    border-left: 4px solid var(--accent-color);
+    background-color: white;
+}
+
+.pizza-grid h4{
+    margin-bottom: 10px;
+    background-color: var(--accent-color);
+    gap: 20px;
+    border: solid black 3px;
+}
+
+.pizza-grid ul,
+.pizza-grid ol {
+    padding-left: 20px;
+}
+
 
 img{
     margin-right: 40px;
