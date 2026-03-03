@@ -1,0 +1,236 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* Navigation */
+nav {
+  background-color: #1a1a1a;
+  padding: 15px 30px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+nav ul li a:hover {
+  color: #f0c040;
+  text-decoration: underline;
+}
+
+nav ul li a.active {
+  color: #f0c040;
+  font-weight: bold;
+}
+
+/* Page header */
+header {
+  background-color: #1a1a1a;
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+header h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 18px;
+  color: #aaa;
+}
+
+/* Main content */
+main {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+/* Sections */
+section {
+  background-color: white;
+  border-radius: 6px;
+  padding: 30px;
+  margin-bottom: 30px;
+}
+
+section h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  padding-bottom: 8px;
+  color: #1a1a1a;
+}
+
+section p {
+  margin-bottom: 12px;
+}
+
+/* Bio layout: image beside text on desktop */
+.bio-layout {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+}
+
+.bio-text {
+  flex: 1;
+}
+
+/* Image */
+figure {
+  margin: 0;
+  flex-shrink: 0;
+  width: 220px;
+  text-align: center;
+}
+
+figure img {
+  max-width: 100%;
+  border-radius: 6px;
+  border: 2px solid #ddd;
+}
+
+figcaption {
+  font-size: 13px;
+  color: #666;
+  margin-top: 8px;
+}
+
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th {
+  background-color: #1a1a1a;
+  color: white;
+  padding: 10px;
+  text-align: left;
+}
+
+td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+nav a {
+  padding: 10px 15px;
+  background-color: #f0c040;
+  color: black;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+nav a:hover{
+  color: black;
+}
+
+/* Lists */
+ul, ol {
+  padding-left: 20px;
+}
+
+ul li, ol li {
+  margin-bottom: 8px;
+}
+
+
+a {
+  color: #1a5fa8;
+}
+
+a:hover {
+  color: #f0c040;
+  text-decoration: underline;
+}
+
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #1a1a1a;
+  color: #aaa;
+  font-size: 13px;
+  margin-top: 40px;
+}
+
+/* For Tablet layouts */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 36px;
+  }
+
+  main {
+    margin: 20px auto;
+  }
+
+  .bio-layout {
+    flex-direction: column;
+  }
+
+  figure {
+    width: 100%;
+    text-align: center;
+  }
+
+  figure img {
+    max-width: 280px;
+  }
+
+  table {
+    font-size: 14px;
+  }
+
+  th, td {
+    padding: 8px 6px;
+  }
+}
+
+/* For Mobile Layouts */
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 28px;
+  }
+
+  header p {
+    font-size: 15px;
+  }
+
+  nav {
+    padding: 10px 15px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  section {
+    padding: 20px 15px;
+  }
+
+  section h2 {
+    font-size: 20px;
+  }
+}

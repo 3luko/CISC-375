@@ -1,0 +1,97 @@
+/* ===========================
+   TIMELINE STYLESHEET
+   timeline.css
+
+   Timeline style adapted from:
+   Alvaro Trigo, "25 CSS Timelines"
+   https://alvarotrigo.com/blog/html-css-timelines/
+=========================== */
+
+/* Outer container */
+.timeline {
+  position: relative;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 10px 0;
+}
+
+/* Vertical center line */
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 20px;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background-color: #f0c040;
+}
+
+/* Each timeline entry */
+.timeline-item {
+  position: relative;
+  margin-bottom: 30px;
+  padding-left: 55px;
+}
+
+/* Dot on the line */
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: 11px;
+  top: 6px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: #f0c040;
+  border: 3px solid white;
+  outline: 2px solid #f0c040;
+}
+
+/* The content box */
+.timeline-content {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 15px 18px;
+}
+
+.timeline-content time {
+  display: block;
+  font-size: 13px;
+  color: #888;
+  margin-bottom: 4px;
+  font-weight: bold;
+}
+
+.timeline-content h3 {
+  font-size: 17px;
+  color: #1a1a1a;
+  margin-bottom: 6px;
+}
+
+.timeline-content p {
+  font-size: 14px;
+  color: #444;
+  margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .timeline::before {
+    left: 12px;
+  }
+
+  .timeline-item {
+    padding-left: 40px;
+  }
+
+  .timeline-item::before {
+    left: 4px;
+    width: 14px;
+    height: 14px;
+  }
+
+  .timeline-content h3 {
+    font-size: 15px;
+  }
+}
